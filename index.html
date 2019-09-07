@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="prefixfree.js"></script>
+    <title>Happy BDay!</title>
   </head>
-  <body>
-    <div class="card">
-      <div class="back"></div>
-      <div class="front">
-        <div class="cover-shape-large">
-          <div class="shape-diamond"></div>
-          <div class="shape-block"></div>
-        </div>
-        <div class="cover-shape-small">
-          <div class="shape-diamond"></div>
-          <div class="shape-block">
-            <div class="cake">
-              <div class="layer layer-bottom"></div>
-              <div class="layer layer-middle"></div>
-              <div class="layer layer-top"></div>
-              <div class="icing"></div>
-              <div class="drip drip1"></div>
-              <div class="drip drip2"></div>
-              <div class="drip drip3"></div>
-              <div class="candle">
-                <div class="flame"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="text-container">
-        <p id="head">Happy Birthday!</p>
-        <p>You’re Beautiful Inside and Out! Hope your Birthday is a Spectacular One! Happy Birthday!</p>
-        <p>🍾🥂💥🎉</p>
-      </div>
+  <body>
+  
+    <div id="outside">
+    
+      <p id="outside-title">
+        Happy Birthday!
+      </p>
+
+      <img id="outside-pic" src="robot.png">
+
+      <p>
+        <button onclick="open_card()">Click to open</button>
+      </p>
+
     </div>
+  
+    <div id="inside">
+    
+      <p id="inside-title">
+        Happy Birthday!
+      </p>
+      
+      <img id="inside-pic" src="girl.png">
+      
+      <p id="message">
+        Your message here!
+      </p>
+
+      <p>
+        <button onclick="close_card()">Click to close</button>
+      </p>
+      
+    </div>
+    
   </body>
+  
 </html>
