@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 #outside {
   z-index: 1;
   position: absolute;
